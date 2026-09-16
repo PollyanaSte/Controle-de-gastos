@@ -1,0 +1,149 @@
+.app{
+    display: grid;
+    width: 100%;
+    grid-template-columns:2fr 2fr;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.size-icon{
+  width: 17px;
+  height: auto;
+  margin-right: 5px;
+  padding-bottom: 0px; 
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.btn-green, .btn-red{
+  text-decoration: none;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  place-items: center; 
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+}
+
+.btn-green{
+  background-color: rgb(16 185 129 / 0.1);
+  color: rgb(16 185 129 / var(--tw-text-opacity, 1));
+}
+
+.btn-green:hover{
+  background-color: rgb(16 185 129 / 0.2);
+}
+
+.btn-red{
+  background-color: rgb(186 26 26 / 0.1);
+  color: rgb(186 26 26 / var(--tw-text-opacity, 1));
+}
+
+.btn-red:hover{
+ background-color: rgba(186, 26, 26, 0.158);
+}
+
+
+/*Modal*/
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns:0fr;
+  place-items: center;
+  text-align: left;
+}
+
+.btn-close{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.014);
+    text-decoration: none;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    width: 210px;
+    text-align: right;
+}
+
+.btn-close img{
+    padding: 2px;
+}
+
+.btn-close img:hover{
+    background-color: rgba(228, 228, 228, 0.514);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+
+form h2{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.espaço-radio label{
+    padding: 6px;
+}
+
+.espaço input{
+    padding: 7px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+}
+
+.espaço{
+    padding-top: 15px;
+}
+
+.espaço-radio{
+    padding: 10px;
+}
+
+select{
+    border: 1px solid rgba(128, 128, 128, 0.158);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.btn-confirmar{
+    text-decoration: none;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    place-items: center; 
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16 185 129 / 0.1);
+    color: rgb(16 185 129 / var(--tw-text-opacity, 1));
+}
+
+.btn-confirmar:hover{
+  background-color: rgb(16 185 129 / 0.2);
+}
+
+.espaço-btn{
+    padding-top: 20px;
+}

@@ -1,0 +1,77 @@
+  .content{
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+/* Header */
+
+.header{
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.logo{
+  width: 40px;
+  height: auto;
+}
+
+h1{
+  font-size: 20px;
+  color: #202020;
+  padding-top: 10px;
+}
+
+/* Fim Header */
+
+/* Filtros */
+
+.filtros {
+  width: 100%;
+}
+
+.filtros form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.filtro {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: #444444dc;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filtro.selecionado {
+  color: #ffffff;
+  background-color: #68e6a7d5;
+}
+
+.filtro-opcao {
+  display: none;
+}
+
+.icone-filtro{
+  width: 10px;
+  height: auto;
+  margin-right: 5px;
+}
+
+/* Fim Filtros */
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+
+/* Saldo Total */
+
+.saldo-total{
+  width: 100%;
+  height: 120px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #ece9e9;
+  padding: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  background-image: linear-gradient(25deg, rgb(15 23 42 / var(--tw-bg-opacity, 1)) 85%, hsla(126, 80%, 7%, 0.849));
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+.saldo-total h2{
+  font-size: 16px;
+  color: #d8d7d7;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.saldo-total p{
+  font-size: 12px;
+  color: #fcfcfc;  
+}
+
+/* Fim Saldo Total */
+
+
+
+/* Receitas e Despesas */
+
+.receitas-despesas{   
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de tamanhos iguais */
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.fluxo-caixa{
+  background-color: #e6e6e69f;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.fluxo-caixa p{
+  font-size: 15px;
+  color: #747474;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.fluxo-caixa .valor{
+  font-size: 15px;
+  color: #444444;
+  font-weight: bold;
+}
+
+.size-icon{
+  width: 17px;
+  height: auto;
+  margin-right: 5px;
+  padding-bottom: 0px; 
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.btn-green, .btn-red{
+  text-decoration: none;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  place-items: center; 
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-green{
+  background-color: rgb(16 185 129 / 0.1);
+  color: rgb(16 185 129 / var(--tw-text-opacity, 1));
+}
+
+.btn-green:hover{
+  background-color: rgb(16 185 129 / 0.2);
+}
+
+.btn-red{
+  background-color: rgb(186 26 26 / 0.1);
+  color: rgb(186 26 26 / var(--tw-text-opacity, 1));
+}
+
+.btn-red:hover{
+ background-color: rgba(186, 26, 26, 0.158);
+}
+
+/* Fim Receitas e Despesas */

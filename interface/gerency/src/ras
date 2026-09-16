@@ -1,0 +1,54 @@
+      {transacoes.map( (transacao) =>(
+                            
+              <div className="transacao" key={transacao.id}>
+                <div className="icon-container">
+                  <img src={transacao.categoria + '.png'} alt="Icone" className="icon-saida"/>
+                </div>
+
+               <div className="transacao-info"> 
+                  <p className="descricao">
+                  {transacao.descricao}
+                  </p>
+                  <p className="categoria">{transacao.categoria} * {transacao.data}</p>
+                </div>
+
+                <div className="transacao-valor">
+                  <p className="valor">
+                    R${transacao.valor.toFixed(2).replace('.', ',')}
+                  </p>     
+                </div>
+
+                <div> 
+                  <img src="trash.png" alt="trash" className="trash-icon"/>
+                </div>
+              </div>
+            ))}
+
+          }
+
+
+          transacao.valor.toLocaleString('pt-br',{
+                      style:'currency', currency:'BRL'
+
+
+
+                          interface Transacao{
+        id:number,
+        tipo:string,
+        valor:number,
+        categoria:string,
+        descricao:string,
+        data:string
+    }
+
+    interface AddProps {
+    adicionarTransacao: (transacao: Transacao) => void
+}
+
+
+  function adicionarTransacao(novaTransacao: Transacao) {
+          setTransacoes((transacoesAntigas) => [
+            ...transacoesAntigas,
+            novaTransacao
+          ])
+        }

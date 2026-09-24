@@ -38,7 +38,7 @@ import axios from "axios";
         }
 
 
-            await axios.post('https://controle-de-gastos-ur8h.onrender.com', {
+            await axios.post('https://controle-de-gastos-ur8h.onrender.com/transacoes', {
                 id: Date.now(),
                 tipo:tipo,
                 valor:valor, 

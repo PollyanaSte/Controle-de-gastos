@@ -29,7 +29,7 @@ function App() {
       //Função para buscar as transações no banco de dados e atualizar o estado do componente
         const buscarTransacoes = async () => {
           try {
-            const response = await axios.get('http://localhost:3008/transacoes')
+            const response = await axios.get('https://controle-de-gastos-ur8h.onrender.com')
             
             setTransacoes(response.data)           
 

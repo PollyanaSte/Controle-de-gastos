@@ -26,7 +26,7 @@ import './UserTr.css'
 
         const handleDelete = async() => {
           try{
-            const response = await fetch(`http://localhost:3008/transacoes/${transacao.id}`, {
+            const response = await fetch(`https://controle-de-gastos-ur8h.onrender.com`, {
               method: 'DELETE',
             });
             if (response.ok) {

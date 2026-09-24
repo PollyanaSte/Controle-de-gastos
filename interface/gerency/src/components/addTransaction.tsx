@@ -38,7 +38,7 @@ import axios from "axios";
         }
 
 
-            await axios.post('http://localhost:3008/transacoes', {
+            await axios.post('https://controle-de-gastos-ur8h.onrender.com', {
                 id: Date.now(),
                 tipo:tipo,
                 valor:valor, 

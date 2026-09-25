@@ -31,7 +31,12 @@ function App() {
           try {
             const response = await axios.get('https://controle-de-gastos-ur8h.onrender.com/transacoes');
             
-            setTransacoes(response.data)           
+            const dadosFormatados = response.data.map((t: any) => ({
+              ...t,
+              valor: Number(t.valor)
+            }));
+
+            setTransacoes(dadosFormatados);           
 
           } catch (error) {
             console.error('Erro ao buscar transações:', error)

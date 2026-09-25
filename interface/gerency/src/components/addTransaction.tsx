@@ -132,7 +132,7 @@ import axios from "axios";
                                 <select
                                     value={categoria}
                                     onChange={(event) =>
-                                    setCategoria(event.target.value as "Alimentação" |"Lazer"|"Pix recebido"|"Freelancer"|"Salario"| "Casa"|"Transporte"| "Saúde"| "Outros")
+                                    setCategoria(event.target.value as "Alimentação" |"Lazer"|"Pix recebido"|"Freelancer"|"Salário"| "Casa"|"Transporte"| "Saúde"| "Outros")
                                     }
                                 >
                                     <option value="" disabled>Categoria</option>
@@ -140,7 +140,7 @@ import axios from "axios";
                                     <option value="Lazer">Lazer</option>
                                     <option value="Pix recebido">Pix recebido</option>
                                     <option value="Freelancer">Freelancer</option>
-                                    <option value="Salario">Salario</option>
+                                    <option value="Salário">Salário</option>
                                     <option value="Transporte">Transporte</option>
                                     <option value="Casa">Casa</option>
                                     <option value="Saúde">Saúde</option>

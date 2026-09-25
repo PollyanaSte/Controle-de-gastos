@@ -33,7 +33,7 @@ const Transacao = mongoose.model('Transacao', transacaoSchema);
 app.get('/transacoes', async (request, response) => {
    
   const transacoes = await Transacao.find()
-  .sort({ data: -1 });
+  .sort({ createdAt: -1 });
 
    response.status(200).json(transacoes);
 })
@@ -68,4 +68,4 @@ app.delete('/transacoes/:id', async (request, response) => {
 
 app.listen(3008, () => {
   console.log('Servidor rodando na porta 3008');
-})
+});
